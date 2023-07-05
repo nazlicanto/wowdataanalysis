@@ -1,9 +1,10 @@
-World of Warcraft Character Data Analysis README
+# World of Warcraft Character Data Analysis README
 
 The project aims to analyze a dataset of World of Warcraft characters. 
+
 The dataset contains data about the character's attributes such as their race, class, level, zone, guild, and the time when the data was collected.
 
-The dataset consists of the following columns:
+### The dataset consists of the following columns:
 	char: unique character identifier.
 	level: current level of the character.
 	race: character’s selected race.
@@ -12,7 +13,7 @@ The dataset consists of the following columns:
 	guild: unique guild identifier.
 	timestamp: date and time when the data was collected.
  
-Analysis and Visualizations
+## Analysis and Visualizations
 Below are the key analysis and visualizations we performed on the dataset:
 
 Unique column value count: A count of unique values in each column of the dataset was calculated to understand the diversity of the dataset.
@@ -25,8 +26,9 @@ Daily Activity: Tracked the daily playing activity among the level intervals thr
 Hourly Activity (Strip Plot): Tracked the hourly playing activity among the level intervals throughout the year and displayed it in a strip plot.
 Hourly Activity (Stacked Bar Plot): To provide another perspective, the hourly playing activity among the level intervals was also displayed in a stacked bar
 
-K-Means Clustering: 
+## Clustering
+### K-Means Clustering
 The K-Means algorithm is used to cluster the characters. The required number of clusters is determined using the Elbow Method.
 
-Cluster Analysis: 
+### Cluster Analysis: 
 Each cluster is analyzed to understand its characteristics/profile. 
