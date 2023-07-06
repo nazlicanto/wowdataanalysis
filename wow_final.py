@@ -9,12 +9,12 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
 
-wowdata = pd.read_csv('C://Users//nazli//OneDrive//Desktop//DATA//Sublime Text//wowah_data.csv')
+wowdata = pd.read_csv('...//wowah_data.csv')
 
 wowdata.info()
 wowdata.head()
 
-# The columns starts with space character so for removing
+# The columns start with space, reshaping column names
 wowdata.columns=wowdata.columns.str.replace(' ', '')
 print(wowdata.columns)
 
@@ -123,14 +123,6 @@ plt.title('Race and Class Combinations', fontsize=24)
 plt.xticks(fontsize=16)
 plt.yticks(fontsize=14)
 
-# For the percentages
-totals = [i.get_width() for i in ax.patches]
-total = sum(totals)
-
-for i in ax.patches:
-    ax.text(i.get_width(), i.get_y() + 0.9,
-            str(round((i.get_width()/total)*100, 2))+'%', fontsize=16,
-            color='black')
 
 plt.show()
 
